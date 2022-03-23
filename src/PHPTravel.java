@@ -41,8 +41,6 @@ public class PHPTravel {
 
         driver.findElement(By.className("yes")).click();
 
-        driver.findElement(By.className("la-user")).click();
-
         driver.quit();
     }
 }
