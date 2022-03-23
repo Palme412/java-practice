@@ -1,6 +1,7 @@
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import java.time.Duration;
 import org.openqa.selenium.By;
 // import org.openqa.selenium.Keys;
 
@@ -27,12 +28,20 @@ public class PHPTravel {
 
         driver.findElement(By.id("gateway_bank-transfer")).click();
 
-        // WebElement price = driver.findElement(By.className("form-control
-        // form-control-lg"));
-        // price.sendKeys("5000");
+        WebElement price = driver.findElement(By.name("price"));
+        price.click();
+        price.sendKeys("5000");
 
-        // driver.findElement(By.className("btn btn-primary btn-block btn-lg my-3
-        // waves-effect")).click();
+        driver.findElement(
+                By.xpath("/html/body/section[1]/div/div[2]/div/div[1]/div/div/div[2]/form/div/div[2]/div/button"))
+                .click();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.findElement(By.className("btn-front")).click();
+
+        driver.findElement(By.className("yes")).click();
+
+        driver.findElement(By.className("la-user")).click();
 
         driver.quit();
     }
