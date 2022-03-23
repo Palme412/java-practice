@@ -23,6 +23,17 @@ public class PHPTravel {
 
         driver.findElement(By.className("ladda-label")).click();
 
+        driver.findElement(By.className("user_wallet")).click();
+
+        driver.findElement(By.id("gateway_bank-transfer")).click();
+
+        // WebElement price = driver.findElement(By.className("form-control
+        // form-control-lg"));
+        // price.sendKeys("5000");
+
+        // driver.findElement(By.className("btn btn-primary btn-block btn-lg my-3
+        // waves-effect")).click();
+
         driver.quit();
     }
 }
