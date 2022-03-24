@@ -41,6 +41,8 @@ public class PHPTravel {
 
         driver.findElement(By.className("yes")).click();
 
+        driver.findElement(By.className("la-power-off")).click();
+
         driver.quit();
     }
 }
