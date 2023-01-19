@@ -10,11 +10,16 @@ public class Shopping {
 
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://www.automationpractice.com/index.php");
+        driver.get("http://tutorialsninja.com/demo/");
 
-        WebElement search = driver.findElement(By.className("search_query form-control ac_input"));
-        search.click();
-        search.sendKeys("shirt");
+        WebElement firstItem = driver.findElement(By.id("ControlID-7"));
+        firstItem.click();
+
+        WebElement cart = driver.findElement(By.id("ControlID-5"));
+        cart.click();
+
+        WebElement viewCart = driver.findElement(By.xpath("/html/body/header/div/div/div[3]/div/ul/li[2]/div/p/a[1]"));
+        viewCart.click();
 
         driver.quit();
     }

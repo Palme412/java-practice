@@ -20,7 +20,7 @@ public class GoogleInput {
 
         name.click();
         name.sendKeys("Rainbows");
-        name.sendKeys(Keys.RETURN);
+        name.sendKeys(Keys.RETURN);ç
 
         driver.quit();
     }

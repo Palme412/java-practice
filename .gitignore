@@ -1,2 +1,3 @@
 *.jar
 *.classpath
+*.node_modules
