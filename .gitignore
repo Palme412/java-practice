@@ -1,3 +1,4 @@
 *.jar
 *.classpath
 *.node_modules
+*.lib
