@@ -29,7 +29,9 @@ public class Calculator{
       
     //   int addition = myCalculator.add(5, 7);
     //   System.out.println(addition);
-        // System.out.println(myCalculator.add(5, 7));
+    // System.out.println(myCalculator.add(5, 7));
+        System.out.println(myCalculator.divide(20, 5));
+        System.out.println(myCalculator.subtract(45, 11));
         System.out.println(myCalculator.divide(20, 5));
 
     }
